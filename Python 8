@@ -1,0 +1,19 @@
+# Input string
+sentence = input("Enter a sentence: ")
+
+# Split sentence into words
+words = sentence.split()
+
+# Create dictionary to store frequencies
+frequency = {}
+
+for word in words:
+    if word in frequency:
+        frequency[word] += 1
+    else:
+        frequency[word] = 1
+
+# Display frequencies
+print("Word Frequencies:")
+for word, count in frequency.items():
+    print(word, ":", count)
