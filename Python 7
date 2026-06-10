@@ -1,0 +1,11 @@
+# First list (keys)
+keys = ["A", "B", "C"]
+
+# Second list (values)
+values = [10, 20, 30]
+
+# Create dictionary
+result = dict(zip(keys, values))
+
+# Display dictionary
+print("Dictionary:", result)
