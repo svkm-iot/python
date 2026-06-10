@@ -1,0 +1,17 @@
+# Input sentence
+sentence = input("Enter words separated by spaces: ")
+
+words = sentence.split()
+
+result = {}
+
+for word in words:
+    key = word[0]  # First character
+
+    if key in result:
+        result[key].append(word)
+    else:
+        result[key] = [word]
+
+print("Dictionary:")
+print(result)
