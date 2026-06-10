@@ -1,0 +1,22 @@
+def remove_occurrence(text, word, i):
+    words = text.split()
+    count = 0
+
+    for j in range(len(words)):
+        if words[j] == word:
+            count += 1
+            if count == i:
+                words.pop(j)
+                break
+
+    return " ".join(words)
+
+# Input
+text = input("Enter a sentence: ")
+word = input("Enter the word to remove: ")
+i = int(input("Enter occurrence number to remove: "))
+
+result = remove_occurrence(text, word, i)
+
+print("Updated sentence:")
+print(result)
