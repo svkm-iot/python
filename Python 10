@@ -1,0 +1,11 @@
+# Function to find length of list using recursion
+def list_length(lst):
+    if lst == []:
+        return 0
+    return 1 + list_length(lst[1:])
+
+# Input list
+lst = input("Enter list elements separated by spaces: ").split()
+
+# Display length
+print("Length of the list =", list_length(lst))
